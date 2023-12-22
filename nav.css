@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+._hidden {
+    display: none !important;
+}
+
+._visible {
+    display: block !important;
+}
+
+._nav_ul,
+._dd_ul {
+    list-style: none;
+}
+
+._nav {
+    background: #000;
+    background: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: width 140ms ease;
+}
+
+@media screen and (min-width:450px) {
+
+    ._nav._with_width {
+        width: 300px !important;
+
+    }
+
+    ._link_button,
+    #_dd_btn,
+    ._dd_link_btn {
+        all: unset;
+        width: 300px;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:450px) {
+    ._nav._with_width {
+        width: 100dvw !important;
+    }
+
+    ._link_button,
+    #_dd_btn,
+    ._dd_link_btn {
+        all: unset;
+        width: 100dvw!important;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+
+._nav._without_width {
+    width: 0 !important;
+}
+
+._link_button,
+#_dd_btn,
+._dd_link_btn {
+    all: unset;
+    width: 300px;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+._link_button:hover,
+#_dd_btn:hover,
+._dd_link_btn:hover {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+._nav a {
+    text-decoration: none;
+}
+
+#_nav_open_btn {
+    all: unset;
+    height: 40px;
+    width: 40px;
+    padding: 5px 5px;
+    display: flex;
+    place-items: center;
+    cursor: pointer;
+}
+
+#_nav_close_btn {
+    all: unset;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    background: #000;
+    cursor: pointer;
+}
+
+#_nav_close_svg {
+    fill: white;
+}
+
+#_dd_btn_svg {
+    transform: rotate(0);
+    fill: #fff;
+    margin: 0 15px 0 auto;
+    height: 20px;
+    width: 20px;
+    transition: transform 300ms ease;
+}
+
+._chevron_right {
+    transform: rotate(360deg) !important;
+}
+
+._chevron_down {
+    transform: rotate(90deg) !important;
+}
